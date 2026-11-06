@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#efece6">
+  <title>We Hug Now</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="intro" aria-live="polite">
+    <p id="frase"></p>
+  </div>
+  <main id="film">
+    <div id="schermo">
+      <video id="video" src="video.mp4" controls playsinline preload="auto"></video>
+      <button id="play" type="button" aria-label="Play" hidden>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg>
+      </button>
+    </div>
+    <section id="testo" aria-label="Lyrics">
+      <ol id="righe"></ol>
+      <p id="avviso" lang="it" hidden></p>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
