@@ -53,7 +53,9 @@ function creaRighe(tempi, righeTesto) {
   });
 }
 
+// Gli avvisi servono a chi prepara il sito: online, senza testo, resta solo il video.
 function mostraAvviso(messaggio) {
+  if (!['localhost', '127.0.0.1'].includes(location.hostname)) return;
   avviso.textContent = messaggio;
   avviso.hidden = false;
 }

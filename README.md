@@ -1,9 +1,9 @@
 # We Hug Now
 
-Sito locale: prima un messaggio a blocchi che compaiono e scompaiono, poi il video
-al centro con il testo della canzone che scorre a tempo con la voce.
+Prima un messaggio a blocchi che compaiono e scompaiono, poi il video al centro con il
+testo della canzone che scorre a tempo con la voce.
 
-## Avvio
+## Provarlo in locale
 
 ```bash
 node server.js
@@ -12,15 +12,16 @@ node server.js
 Il server stampa l'indirizzo per il computer e quello per il telefono sulla stessa Wi-Fi.
 Aggiungendo `#video` all'indirizzo si saltano le frasi iniziali.
 
-## File che non sono nella repo
+## Deploy
 
-La repo è pubblica, quindi questi file restano solo sul Mac:
+Il sito è statico: basta pubblicare la cartella, senza passaggi di build.
+`server.js` serve solo per provarlo in locale.
 
-- `video.mp4`: il video, in MP4
-- `lyrics.txt`: il testo della canzone, una riga per ogni riga cantata (16 in tutto)
+## File
+
+- `video.mp4`: il video compresso per il web (720p)
 - `frasi.json`: le frasi iniziali, come elenco di stringhe
-
-## Correggere la sincronia
-
-`timings.json` ha il secondo di inizio e di fine di ogni riga di `lyrics.txt`.
-Se una riga parte troppo presto o troppo tardi basta cambiare il suo `start` e ricaricare.
+- `lyrics.txt`: il testo della canzone, una riga per ogni riga cantata (16 in tutto).
+  Senza questo file, online si vede solo il video.
+- `timings.json`: il secondo di inizio e di fine di ogni riga di `lyrics.txt`.
+  Se una riga parte troppo presto o troppo tardi basta cambiare il suo `start`.

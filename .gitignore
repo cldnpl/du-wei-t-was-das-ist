@@ -1,8 +1,2 @@
-# La repo è pubblica e il video pesa 400 MB (oltre il limite di GitHub):
-# video, testo della canzone e messaggio iniziale restano solo su questo Mac.
-video.mp4
-lyrics.txt
-frasi.json
-
 .DS_Store
 .claude/
